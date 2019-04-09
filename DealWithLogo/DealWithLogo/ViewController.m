@@ -61,7 +61,7 @@
         NSImage * oldImage = [[NSImage alloc] initWithContentsOfFile:newFile];
         
         // 修改新文件的大小
-        CGSize newSize = CGSizeMake(num.integerValue/2, num.integerValue/2);
+        CGSize newSize = CGSizeMake(num.integerValue*0.5, num.integerValue*0.5);
         NSImage * newImage = [[NSImage alloc] initWithSize:newSize];
         [newImage lockFocus];
         [oldImage drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)
